@@ -8,7 +8,7 @@
   },
   "system": {
       "configDependencies": [
-          "cache_bust"
+          "cache-bust"
         ]
   },
   "devDependencies": {
