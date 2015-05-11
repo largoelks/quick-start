@@ -6,11 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "system": {},
+  "system": {
+      "configDependencies": [
+          "cache_bust"
+        ]
+  },
   "devDependencies": {
     "grunt": "^0.4.5",
     "jquery": "^2.1.3",
-    "steal": "^0.7.1",
-    "steal-tools": "^0.7.1"
+    "steal": "^0.10.5",
+    "steal-tools": "^0.10.4"
   }
 }
