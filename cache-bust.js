@@ -5,10 +5,8 @@ function cacheBust(loader) {
     var locate = loader.locate;
 
     loader.locate = function (load) {
-        console.log("loader.locate executed");
-
-        return Promise.resolve(locate.call(this, loader)).then(function (proposedAddress) {
-            console.log("promise resolved", proposedAddress + "?v=" + buildNumber);
+        return Promise.resolve(locate.call(this, load)).then(function (proposedAddress) {
+            console.log("promise resolved", proposedAddress);
             return proposedAddress + "?v=" + buildNumber;
         }, function() {
             console.log("ERROR", arguments);
